@@ -1,0 +1,976 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Google font link  */
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+section {
+    margin-top: 200px;
+}
+
+main,
+footer {
+    max-width: 1500px;
+    margin: 150px auto;
+}
+
+/* ............................nav bar................................  */
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    box-shadow: 2px 2px 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 0px 100px;
+    width: 90%;
+
+}
+
+.logo img {
+    width: 10em;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #031244;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.3em 1em;
+    border-radius: 0px 10px 0px 10px;
+}
+
+nav ul li a:hover {
+    box-shadow: 10px 10px 50px #ddd4d4;
+    background-color: #071957;
+    color: white;
+    transition: all 0.40s ease-in-out;
+}
+
+nav ul li input {
+    border-radius: 25px;
+    border: 2px solid #be7e29;
+    padding: 0.2em 1.5em;
+    cursor: pointer;
+}
+
+nav .menu-btn {
+    color: white;
+    padding-right: 2.5em;
+    font-size: 2em;
+    display: none;
+    cursor: pointer;
+}
+
+#click {
+    display: none;
+}
+
+
+/*........................... header..............................  */
+.header-banner-title-container,
+.header-banner-logo {
+    width: 50%;
+}
+
+.header-banner-container {
+    background-color: #f7f7f7f7;
+    display: flex;
+    padding: 7em 5em;
+    gap: 10em;
+    margin-top: 5.3em;
+}
+
+.header-banner-logo img {
+    width: 100%;
+    height: 50vh;
+}
+
+.header-banner-title {
+    font-size: 2em;
+    font-weight: 700;
+    color: #008000;
+}
+
+.header-banner-sub-title {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    color: #757575;
+}
+
+.header-banner-button-title a {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgb(255, 228, 205);
+    padding: 0.2em 2em;
+    border-radius: 1.2em;
+}
+
+.header-banner-button-title a:hover {
+    background-color: orange;
+    color: rgb(255, 228, 205);
+    transition: all 1.5s ease;
+}
+
+.color-orange {
+    color: orange;
+}
+
+
+
+/* .........................main .........................  */
+/* .......................... Category Products section ................. */
+.Category-Products-container {
+    text-align: center;
+    align-items: center;
+}
+
+.Category-Products-title {
+    margin-bottom: 5em;
+}
+
+.cp-title {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.cp-sub-title {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.item-title-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.overrflow-img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.item-sub-title-container img {
+    width: 100%;
+    height: 25vh;
+
+}
+
+.item-sub-title-container {
+    background-color: #f7f7f7f7;
+    padding: 0 2em 5em;
+    margin: 0 1.2em;
+    overflow: hidden;
+
+}
+
+.item-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+
+.view-all-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #034627;
+    padding: 0.5em 2.5em;
+    border-radius: 0.5em;
+}
+
+.view-all-button a:hover {
+    background-color: #198754;
+    transition: all 1.5s ease;
+}
+
+/* ..................................... Get 20% Off section .....................  */
+.get-off-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+
+}
+
+.get-off-title-container {
+    display: flex;
+    background-color: #ccc;
+    align-items: center;
+    padding: 2em 3em 5em 5em;
+
+}
+
+.get-off-title {
+    color: red;
+    font-weight: 300;
+}
+
+.get-off-sub-title {
+    font-size: 2.8em;
+    font-weight: 400;
+    margin-top: 0.3em;
+}
+
+.get-off-title-sub {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    margin-top: 0.6em;
+}
+
+.get-off-title-container img {
+    width: 70%;
+    height: 70%;
+}
+
+/* .......................... Latest-Products section .................  */
+.Latest-Products-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.Latest-Products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    column-gap: 2em;
+    row-gap: 1.5em;
+}
+
+.Latest-Products-sub-container img {
+    width: 100%;
+    height: 25vh;
+}
+
+.Latest-Products-sub-container {
+    background-color: white;
+    box-shadow: 1px 1px 5px;
+    padding: 1em 3em 2em;
+
+}
+
+.item-name-title {
+    font-size: 1.3em;
+    font-weight: 400;
+
+}
+
+.star-title {
+    color: #ffb700;
+    font-size: 1em;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+
+.price-title {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.add-to-cart-title a {
+    text-decoration: none;
+    border: 1px solid #198754;
+    color: #198754;
+    padding: 0.3rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1.1em;
+}
+
+.love-title {
+    font-size: 1.2em;
+    color: #034627;
+
+}
+
+.add-to-cart-title a:hover {
+    background-color: #198754;
+    color: white;
+    transition: all 1.5s ease;
+}
+
+.add-to-cart-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+
+/* ................ Order Online Save Your Time banner section.............  */
+
+.save-your-time-banner {
+    background-color: #f7f7f7f7;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 7em;
+}
+
+.save-your-time-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.save-your-time-banner-title {
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #008000;
+}
+
+.color-green {
+    color: #183D3D;
+}
+
+/* ..............................footer....................................   */
+.footer-title-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em;
+    margin-bottom: 2em;
+}
+
+.footer-sub-title {
+    font-size: 2em;
+    color: #423b3b;
+}
+
+.footer-title p {
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+
+.footer-title ul li a {
+    text-decoration: none;
+    color: #423b3b;
+}
+
+.footer-title ul li {
+    margin-left: 2.5em;
+    margin-top: 0.5em;
+}
+
+.footer-title-img img {
+    width: 40%;
+}
+
+.footer-Copyright {
+    text-align: center;
+    padding: 1em 0 3em;
+    font-weight: 300;
+}
+
+.Developer-tltle {
+    font-weight: bold;
+}
+
+.Developer-name-title {
+    color: orangered;
+    font-weight: 700;
+}
+
+.none {
+    display: none;
+}
+
+/* ................................................. @media screen ..................................  */
+
+@media screen and (max-width:576px) {
+
+    /* nav-bar  */
+
+    nav {
+        height: 60px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 30px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover,
+    nav ul li .active {
+        background: none;
+        color: #ffa500;
+        box-shadow: none;
+    }
+
+    nav .menu-btn {
+        color: #000000;
+        padding-right: 4em;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0;
+        transition: all 0.50s ease-in;
+    }
+
+    #click:checked~.menu-btn :before {
+        content: "\f00d";
+    }
+
+    /* .......header.......  */
+    .header-banner-container {
+        flex-direction: column-reverse;
+        padding: 0 1em;
+        margin-top: 4em;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .header-banner-title-container,
+    .header-banner-logo {
+        width: 100%;
+    }
+
+    .header-banner-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-banner-title {
+        font-size: 20px;
+    }
+
+    .header-banner-button-title a {
+        font-size: 1.2em;
+    }
+
+    /* Category Products section  */
+    .item-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+    }
+
+    .cp-title {
+        font-size: 2em;
+    }
+
+    .cp-sub-title {
+        font-size: 1.2em;
+    }
+
+    /* Get 20% Off section   */
+    .get-off-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1.5em;
+        padding: 0 0.3em;
+        text-align: center;
+    }
+
+    .get-off-title-container {
+        flex-direction: column;
+        padding: 1.5em 2em;
+    }
+
+    /* Latest-Products section and  Most Sell Products section  */
+    .Latest-Products-title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0.5em;
+    }
+
+    .add-to-cart-title a {
+        padding: 0.3rem 1.5rem;
+        font-size: 0.7em;
+    }
+
+
+    /* Order Online Save Your Time banner section  */
+    .save-your-time-banner {
+        flex-direction: column-reverse;
+        padding: 0 0.5em;
+        gap: 2em;
+    }
+
+    .save-your-time-banner-title {
+        font-size: 2em;
+    }
+
+    /* footer  */
+    .footer-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        padding: 1em;
+        background-color: #f7f7f7;
+    }
+
+    .footer-title img {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    .footer-title .gamil-title {
+        font-size: 1em;
+        width: 700;
+    }
+
+    .footer-Copyright-container {
+        padding: 0.2em;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+
+    /* nav-bar  */
+
+    nav {
+        height: 60px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 30px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover,
+    nav ul li .active {
+        background: none;
+        color: #ffa500;
+        box-shadow: none;
+    }
+
+    nav .menu-btn {
+        color: #000000;
+        padding-right: 4em;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0;
+        transition: all 0.50s ease-in;
+    }
+
+    #click:checked~.menu-btn :before {
+        content: "\f00d";
+    }
+
+    /* .......header.......  */
+    .header-banner-container {
+        flex-direction: column-reverse;
+        margin-top: 4.2em;
+        padding: 1em;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .header-banner-title-container,
+    .header-banner-logo {
+        width: 100%;
+    }
+
+    .header-banner-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-banner-title {
+        font-size: 1.9em;
+    }
+
+    /* Category Products section  */
+    .item-title-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1.5em;
+    }
+
+    /* Get 20% Off section   */
+    .get-off-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1.5em;
+        padding: 0 0.5em;
+        text-align: center;
+    }
+
+    .get-off-title-container {
+        flex-direction: column;
+        padding: 1.5em 2em;
+
+    }
+
+    /* Latest-Products section and  Most Sell Products section  */
+    .Latest-Products-title {
+        margin-left: 0.3em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0.5em;
+        column-gap: 1.2em;
+    }
+
+    .add-to-cart-title a {
+        padding: 0.3rem 1.5rem;
+        font-size: 0.8em;
+        margin-right: 1em;
+    }
+
+    /* Order Online Save Your Time banner section  */
+    .save-your-time-banner {
+        flex-direction: column-reverse;
+        padding: 0.5em 0.8em;
+        gap: 3em;
+    }
+
+    /* footer  */
+    .footer-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        padding: 1em;
+        background-color: #f7f7f7;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    /* nav-bar  */
+
+    nav {
+        height: 60px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 30px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover,
+    nav ul li .active {
+        background: none;
+        color: #ffa500;
+        box-shadow: none;
+    }
+
+    nav .menu-btn {
+        color: #000000;
+        padding-right: 4em;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0;
+        transition: all 0.50s ease-in;
+    }
+
+    #click:checked~.menu-btn :before {
+        content: "\f00d";
+    }
+
+
+
+    /* .......header.......  */
+    .header-banner-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 1em;
+        gap: 2em;
+        margin-top: 4em;
+    }
+
+    .header-banner-title-container,
+    .header-banner-logo {
+        width: 100%;
+    }
+
+    .header-banner-title {
+        font-size: 2.6em;
+    }
+
+    .header-banner-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Category Products section  */
+    .item-title-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1.5em;
+    }
+
+    .view-all-button a {
+        padding: 0.4em 2.3em;
+    }
+
+    /* Get 20% Off section   */
+    .get-off-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1.5em;
+        padding: 0 0.5em;
+    }
+
+    .get-off-title-container {
+        gap: 4em;
+
+    }
+
+    /* Latest-Products section and  Most Sell Products section  */
+    .Latest-Products-title {
+        margin-left: 0.3em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0.5em;
+        column-gap: 1.2em;
+    }
+
+    .add-to-cart-title a {
+        padding: 0.3rem 1.5rem;
+        font-size: 0.6em;
+        margin-right: 1.5em;
+    }
+
+    /* Order Online Save Your Time banner section  */
+    .save-your-time-banner {
+        padding: 8em 2em;
+        gap: 3em;
+    }
+
+    /* footer  */
+    .footer-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        padding: 1em;
+        background-color: #f7f7f7;
+    }
+
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+
+    /* ............................nav bar................................  */
+    .logo img {
+        width: 7em;
+        height: 40px;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+        letter-spacing: px;
+    }
+
+    nav ul li input {
+        padding: 0.2em 1.2em;
+    }
+
+    /* .......header.......  */
+    .header-banner-container {
+        padding: 3em;
+        gap: 2em;
+    }
+
+    .header-banner-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-banner-title {
+        flex-wrap: wrap;
+        font-size: 1.7em;
+    }
+
+    /* Category Products section  */
+    .item-title-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1.5em;
+    }
+
+    .view-all-button a {
+        padding: 0.4em 2.3em;
+    }
+
+    /* Get 20% Off section   */
+    .get-off-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1.5em;
+        padding: 0 0.5em;
+    }
+
+    .get-off-title-container {
+        gap: 4em;
+
+    }
+
+    /* Latest-Products section and  Most Sell Products section  */
+    .Latest-Products-title {
+        margin-left: 0.3em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0.9em;
+        column-gap: 1.2em;
+    }
+
+    .Latest-Products-sub-container {
+        padding: 3em;
+    }
+
+    /* Order Online Save Your Time banner section  */
+    .save-your-time-banner {
+        padding: 8em 2em;
+        gap: 3em;
+    }
+
+    /* footer  */
+    .footer-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        padding: 1em;
+        background-color: #f7f7f7;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1450px) {
+
+
+    /* .......header.......  */
+    .header-banner-container {
+        padding: 3em;
+        gap: 2em;
+    }
+
+    .header-banner-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-banner-title {
+        font-size: 1.7em;
+    }
+
+    /* Get 20% Off section   */
+    .get-off-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1.5em;
+        padding: 0 0.5em;
+    }
+
+    .get-off-title-container {
+        gap: 5em;
+
+    }
+
+    /* Latest-Products section and  Most Sell Products section  */
+    .Latest-Products-title {
+        margin-left: 0.3em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0.9em;
+        column-gap: 1.2em;
+    }
+
+    .Latest-Products-sub-container {
+        padding: 4em;
+    }
+
+    /* Order Online Save Your Time banner section  */
+    .save-your-time-banner {
+        padding: 8em 4em;
+        gap: 5em;
+    }
+
+    /* footer  */
+    .footer-title-container {
+        gap: 1.8em;
+        padding: 2.5em;
+        background-color: #f7f7f7;
+    }
+
+}

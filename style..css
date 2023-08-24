@@ -1,0 +1,894 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Google font link  */
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --primary-color: #198754;
+    --secondary-color: #ffffff;
+    --hover-button-color: #0a6339;
+}
+
+
+/* ............................nav bar................................  */
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    box-shadow: 2px 2px 8px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 0px 100px;
+    width: 90%;
+}
+
+.logo img {
+    width: 10em;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #031244;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.3em 1em;
+    border-radius: 0px 10px 0px 10px;
+}
+
+nav ul li a:hover,
+nav ul li .active {
+    box-shadow: 10px 10px 50px #ddd4d4;
+    background-color: #071957;
+    color: white;
+    transition: all 0.40s ease-in-out;
+}
+
+nav ul li input {
+    border-radius: 25px;
+    border: 2px solid #be7e29;
+    padding: 0.2em 1.5em;
+    cursor: pointer;
+}
+
+nav .menu-btn {
+    color: white;
+    padding-right: 2.5em;
+    font-size: 2em;
+    display: none;
+    cursor: pointer;
+}
+
+#click {
+    display: none;
+}
+
+/*........................... header..............................  */
+.header-banner-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2em 7em;
+    gap: 5em;
+    margin-top: 6em;
+    text-align: center;
+}
+
+.header-banner-logo img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.header-banner-title-container,
+.header-banner-logo {
+    width: 50%;
+}
+
+.vegetable-color {
+    color: var(--hover-button-color);
+}
+
+.header-Vegetable-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.header-Fruit-title {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.Fruit-color {
+    color: #f74606;
+}
+
+.header-Products-title {
+    font-size: 2.7em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.Products-color {
+    color: #6b4d4d;
+}
+
+.header-banner-sub-title {
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-weight: 100;
+}
+
+.header-banner-button-title a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 0.4em 2.2em;
+    border-radius: 1.2em;
+}
+
+.header-banner-button-title a:hover {
+    background-color: var(--hover-button-color);
+    color: var(--secondary-color);
+    transition: all 1.5s ease;
+}
+
+/* .......................... Latest-Products section .................  */
+.Vegetable-Items-container {
+    background-color: whitesmoke;
+    padding: 5em 15em;
+    margin-top: 3em;
+
+}
+
+
+.Latest-Products-title {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 2em;
+    font-weight: 300;
+    color: #706666;
+}
+
+.Latest-Products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    column-gap: 2em;
+    row-gap: 1.5em;
+    cursor: pointer;
+
+}
+
+.Latest-Products-sub-container img {
+    width: 100%;
+    height: 25vh;
+}
+
+.Latest-Products-sub-container {
+    background-color: white;
+    box-shadow: 1px 1px 5px;
+    padding: 1em 1.2em 2em;
+    border: 1px solid #bdb9b9;
+
+}
+
+.price-and-name-title {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.item-name-title {
+    font-size: 1.1em;
+    font-weight: 400;
+
+}
+
+
+.price-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #e60000;
+}
+
+.star-title {
+    color: #ffb700;
+    font-size: 1.2em;
+}
+
+.add-to-cart-title a {
+    text-decoration: none;
+    border: 1px solid #198754;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+
+.add-to-cart-title a:hover {
+    background-color: var(--hover-button-color);
+    color: white;
+    transition: all 1.5s ease;
+}
+
+.add-to-cart-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    align-items: center;
+}
+
+/* ..............................footer....................................   */
+.footer-title-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;
+    margin-bottom: 2em;
+    padding: 5em 15em;
+}
+
+.footer-sub-title {
+    font-size: 2em;
+    color: #423b3b;
+}
+
+.footer-title p {
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+
+.footer-title ul li a {
+    text-decoration: none;
+    color: #423b3b;
+}
+
+.footer-title ul li {
+    margin-left: 2.5em;
+    margin-top: 0.5em;
+}
+
+.footer-title-img img {
+    width: 40%;
+}
+
+.footer-Copyright {
+    text-align: center;
+    padding: 1em 0 3em;
+    font-weight: 300;
+}
+
+.Developer-tltle {
+    font-weight: bold;
+}
+
+.Developer-name-title {
+    color: orangered;
+    font-weight: 700;
+}
+
+.none {
+    display: none;
+}
+
+/* ..........................@media screen........................   */
+/* header */
+@media screen and (max-width:576px) {
+    /* nav-bar  */
+
+    nav {
+        height: 60px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 30px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover,
+    nav ul li .active {
+        background: none;
+        color: #ffa500;
+        box-shadow: none;
+    }
+
+    nav .menu-btn {
+        color: #000000;
+        padding-right: 4em;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0;
+        transition: all 0.50s ease-in;
+    }
+
+    #click:checked~.menu-btn :before {
+        content: "\f00d";
+    }
+
+    .header-banner-container {
+        flex-direction: column;
+        padding: 0 1em;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .header-banner-title-container,
+    .header-banner-logo {
+        width: 100%;
+    }
+
+    .header-Vegetable-title {
+        font-size: 1.1em;
+    }
+
+    .header-Products-title {
+        font-size: 1.1em;
+    }
+
+    .header-Fruit-title {
+        font-size: 1.4em;
+    }
+
+    .header-banner-sub-title {
+        font-size: 1em;
+    }
+
+    /* Latest-Products section  */
+
+    .Vegetable-Items-container {
+        padding: 2em 1em;
+    }
+
+    .Latest-Products-title {
+        font-size: 1.3em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .price-and-name-title {
+        flex-direction: column;
+        gap: 0.6em;
+    }
+
+    .item-name-title {
+        font-size: 1.5em;
+
+    }
+
+    .price-title {
+        font-size: 1.5em;
+    }
+
+    .star-title {
+        font-size: 0.9em;
+    }
+
+    .add-to-cart-title {
+        flex-direction: column-reverse;
+        gap: 1.5em;
+    }
+
+
+    /* footer  */
+    .footer-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3em 0.7em;
+    }
+
+    .footer-sub-title {
+        font-size: 1.5em;
+    }
+
+    .footer-title p {
+        font-size: 1em;
+    }
+
+    .Latest-Products-sub-container img {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    /* nav-bar  */
+
+    nav {
+        height: 60px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 30px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover,
+    nav ul li .active {
+        background: none;
+        color: #ffa500;
+        box-shadow: none;
+    }
+
+    nav .menu-btn {
+        color: #000000;
+        padding-right: 4em;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0;
+        transition: all 0.50s ease-in;
+    }
+
+    #click:checked~.menu-btn :before {
+        content: "\f00d";
+    }
+
+    /* header */
+    .header-banner-container {
+        flex-direction: column;
+        padding: 0 3em;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .header-banner-title-container,
+    .header-banner-logo {
+        width: 100%;
+    }
+
+    .header-Vegetable-title {
+        font-size: 1.8em;
+    }
+
+    .header-Products-title {
+        font-size: 2em;
+    }
+
+    .header-Fruit-title {
+        font-size: 2.4em;
+    }
+
+    /* Latest-Products section  */
+
+    .Vegetable-Items-container {
+        padding: 2em 1em;
+    }
+
+    .Latest-Products-title {
+        font-size: 1.5em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-name-title {
+        font-weight: bold;
+        font-size: 1.5em;
+
+    }
+
+    .price-title {
+        font-size: 1.6em;
+    }
+
+    .price-and-name-title {
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .add-to-cart-title {
+        flex-direction: column-reverse;
+        gap: 1.5em;
+    }
+
+    .Latest-Products-sub-container img {
+        width: 70%;
+    }
+
+    /* footer  */
+    .footer-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 4em 0.7em;
+    }
+
+    .footer-sub-title {
+        font-size: 1.5em;
+    }
+
+    .footer-title p img {
+        width: 20%;
+    }
+
+
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    /* nav-bar  */
+
+    nav {
+        height: 60px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 30px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover,
+    nav ul li .active {
+        background: none;
+        color: #ffa500;
+        box-shadow: none;
+    }
+
+    nav .menu-btn {
+        color: #000000;
+        padding-right: 4em;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0;
+        transition: all 0.50s ease-in;
+    }
+
+    #click:checked~.menu-btn :before {
+        content: "\f00d";
+    }
+
+    /* header */
+    .header-banner-container {
+        flex-direction: column;
+        padding: 0 3em;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .header-banner-title-container,
+    .header-banner-logo {
+        width: 100%;
+    }
+
+    /* Latest-Products section  */
+    .Vegetable-Items-container {
+        padding: 2em 1em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-name-title {
+        font-weight: bold;
+        font-size: 1.7em;
+
+    }
+
+    .price-title {
+        font-size: 1.8em;
+    }
+
+    .star-title {
+        font-size: 1.2em;
+    }
+
+    .price-and-name-title {
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .add-to-cart-title {
+        gap: 1.5em;
+    }
+
+    .Latest-Products-sub-container img {
+        width: 60%;
+    }
+
+    /* footer  */
+    .footer-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5em 3em;
+    }
+
+    .footer-sub-title {
+        font-size: 2.5em;
+    }
+
+    .footer-title-img img {
+        width: 22%;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    /* nav-bar  */
+
+    nav {
+        height: 60px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 30px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover,
+    nav ul li .active {
+        background: none;
+        color: #ffa500;
+        box-shadow: none;
+    }
+
+    nav .menu-btn {
+        color: #000000;
+        padding-right: 4em;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    #click:checked~ul {
+        left: 0;
+        transition: all 0.50s ease-in;
+    }
+
+    #click:checked~.menu-btn :before {
+        content: "\f00d";
+    }
+
+
+    /* header */
+    .header-banner-container {
+        padding: 0 4em;
+        gap: 2em;
+        text-align: center;
+        margin-top: 8em;
+    }
+
+    .header-Vegetable-title {
+        font-size: 1.5em;
+    }
+
+    .header-Fruit-title {
+        font-size: 2.1em;
+    }
+
+    .header-Products-title {
+        font-size: 1.8em;
+    }
+
+    /* Latest-Products section  */
+    .Vegetable-Items-container {
+        padding: 2em 1em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item-name-title {
+        font-weight: bold;
+        font-size: 1.4em;
+
+    }
+
+    .price-title {
+        font-size: 1.5em;
+    }
+
+    .star-title {
+        font-size: 1.1em;
+    }
+
+    .price-and-name-title {
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .add-to-cart-title {
+        gap: 1em;
+        /* flex-direction: column-reverse; */
+    }
+
+    .Latest-Products-sub-container img {
+        width: 60%;
+    }
+
+    /* footer  */
+    .footer-title-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5em 3em;
+    }
+
+    .footer-sub-title {
+        font-size: 2.5em;
+    }
+
+    .footer-title-img img {
+        width: 23%;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1500px) {
+
+    /* header */
+    .header-banner-container {
+        padding: 0 4em;
+        gap: 2em;
+        text-align: center;
+        margin-top: 8em;
+    }
+
+    .header-Vegetable-title {
+        font-size: 2.1em;
+    }
+
+    .header-Fruit-title {
+        font-size: 2.5em;
+    }
+
+    .header-Products-title {
+        font-size: 2.2em;
+    }
+
+    /* Latest-Products section  */
+
+    .Vegetable-Items-container {
+        padding: 2em 1em;
+    }
+
+    .Latest-Products-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item-name-title {
+        font-weight: bold;
+        font-size: 1.4em;
+
+    }
+
+    .price-title {
+        font-size: 1.5em;
+    }
+
+    .add-to-cart-title a {
+        padding: 0.5em 1em;
+    }
+
+    .star-title {
+        font-size: 1em;
+    }
+
+    .price-and-name-title {
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .Latest-Products-sub-container img {
+        width: 60%;
+    }
+
+
+    /* footer  */
+    .footer-title-container {
+        padding: 6em 4em;
+    }
+
+    .footer-sub-title {
+        font-size: 2.1em;
+    }
+
+    .footer-title-img img {
+        width: 70%;
+    }
+}
