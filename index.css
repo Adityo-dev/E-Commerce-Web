@@ -188,6 +188,7 @@ nav .menu-btn {
     transform: scale(1.2);
     transition: 1s;
 }
+
 .item-title {
     font-size: 1.8em;
     font-weight: 700;
@@ -508,6 +509,10 @@ nav .menu-btn {
         padding: 1.5em 2em;
     }
 
+    .item-title-container img {
+        width: 60%;
+    }
+
     /* Latest-Products section and  Most Sell Products section  */
     .Latest-Products-title {
         font-size: 1.2em;
@@ -524,6 +529,9 @@ nav .menu-btn {
         font-size: 0.7em;
     }
 
+    .Latest-Products-sub-container img {
+        width: 55%;
+    }
 
     /* Order Online Save Your Time banner section  */
     .save-your-time-banner {
